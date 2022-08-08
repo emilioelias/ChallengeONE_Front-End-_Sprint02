@@ -64,7 +64,7 @@
 .promocion-contenedor {
     width: 1440px;
     height: 352px;
-    background-image: url("/img/banner.png");
+    background-image: url("img/banner.png");
     display: flex;
     flex-direction: column;
     justify-content: end;
