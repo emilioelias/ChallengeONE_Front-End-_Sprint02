@@ -1,56 +1,42 @@
-/*Tablet*/
-@media (max-width: 768px){
-   
+/*Mobile*/
+@media (max-width: 360px) {
+
     .todo {
-        width: 468px;
+        width: 360px;
         background: #F5F5F5;
     }
-    
+
     /*----header----*/
     .header {
         background: #FFFFFF;
-        width: 468px;
+        width: 360px;
     }
-    
+
     .header-contenedor {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        text-align: center;
-      
-        margin-left: 32px;
-        margin-right: 32px;
-        align-items: center;
+        margin-left: 18px;
+        margin-right: 18px;
     }
-    
+
     .header-contenedor-logo-buscar {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    
+
     .header-logo {
-        width: 176px;
-        height: 50px;
+        width: 100px;
+        height: 28px;
     }
-    
+
     .header-buscar {
-        width: 300px;
-        
-        background: #F5F5F5;
-        border-radius: 20px;
-        border: none;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 16px;
-        color: #A2A2A2;
-        margin-left: 32px;
+        display: none;
     }
-    
+
     .header-login {
-        width: 182px;
+        width: 133px;
+        height: 40px;
         border: 1px solid #2A7AE4;
         font-family: 'Raleway';
         font-style: normal;
@@ -60,33 +46,24 @@
         color: #2A7AE4;
         text-align: center;
     }
-    
+
     /*----banner promocion----- */
     .promocion-contenedor {
-        width: 468px;
-        height: 352px;
-        background-image: url("/img/banner.png");
+        width: 360px;
+        height: 192px;
+        background-image: url("img/banner.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
         display: flex;
         flex-direction: column;
         justify-content: end;
     }
-    
+
     .promocion-h1 {
         margin: 0px;
-        padding-left: 150px;
-        padding-bottom: 16px;
-        font-family: 'Raleway';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 52px;
-        line-height: 61px;
-        color: #FFFFFF;
-    }
-    
-    .promocion-h3 {
-        margin: 0px;
-        padding-left: 32px;
-        padding-bottom: 16px;
+        padding-left: 16px;
+        padding-bottom: 8px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
@@ -94,56 +71,69 @@
         line-height: 26px;
         color: #FFFFFF;
     }
-    
-    .promocion-boton {
-        padding-left: 32px;
-        padding-bottom: 32px;
+
+    .promocion-h3 {
+        margin: 0px;
+        padding-left: 16px;
+        padding-bottom: 16px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
     }
-    
+
+    .promocion-boton {
+        padding-left: 16px;
+        padding-bottom: 16px;
+    }
+
     .ver-consolas {
-        width: 129px;
-        height: 51px;
+        width: 118px;
+        height: 40px;
         background: #2A7AE4;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 14px;
+        line-height: 16px;
         color: #FFFFFF;
         border: #2A7AE4;
     }
-    
+
     /*----categoria de productos----*/
 
-    .categoria-general{
-        width: 468px;
+    .categoria-general {
+        width: 360px;
+
     }
 
     .contenedor-categoria-productos {
-        margin-right: 32px;
-        margin-left: 32px;
-        width: 404px;
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 328px;
         /*height: 306px;*/
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-top: 32px;
+        margin-bottom: 32px;
     }
-    
+
     .contenedor-categoria-productos:nth-child(3) {
-        margin-right: 32px;
-        margin-left: 32px;
-        width: 404px;
+        margin-right: 16px;
+        margin-left: 16px;
+        width: 328px;
         /*height: 306px;*/
-        margin-top: 64px;
-        margin-bottom: 64px;
+        margin-top: 32px;
+        margin-bottom: 32px;
     }
-    
+
     .contenedor-productos-titulo {
         display: flex;
         justify-content: space-between;
         align-items: center;
-    
+
     }
-    
+
     .ver-todo {
         font-family: 'Raleway';
         font-style: normal;
@@ -153,34 +143,46 @@
         color: #2A7AE4;
         text-decoration: none;
     }
-    
+
     .contenedor-productos-box {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
     }
-    
+
+    .producto-box:nth-child(n+3) {
+        display: none;
+    }
+
     .producto-titulo {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 32px;
-        line-height: 38px;
+        font-size: 22px;
+        line-height: 26px;
         color: #464646;
         margin: 0px;
     }
-    
+
     .producto-ul {
         padding: 0px;
+        margin: 0px;
         list-style-type: none;
     }
-    
-    
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+    }
+
     .producto-img {
-        width: 176px;
+        margin: 0px;
+        padding: 0px;
+        width: 156px;
         height: 174px;
     }
-    
+
     .producto-nombre {
         font-family: 'Raleway';
         font-style: normal;
@@ -190,7 +192,7 @@
         color: #464646;
         margin-top: 8px;
     }
-    
+
     .producto-precio {
         font-family: 'Raleway';
         font-style: normal;
@@ -200,50 +202,54 @@
         color: #464646;
         margin-top: 8px;
     }
-    
+
     .producto-ver {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 14px;
+        line-height: 16px;
         color: #2A7AE4;
         margin-top: 8px;
-    
     }
-    
+
     /*----footer rodapie-----*/
     .footer-rodapie {
+        width: 360px;
         background: #EAF2FD;
+
     }
-    
+
     .rodapie-logo {
         width: 176px;
         height: 50px;
     }
-    
+
     .footer {
+        height: 553px;
         display: flex;
-        justify-content: space-between;
-        margin-left: 32px;
-        margin-right: 32px;
-        height: 240px;
-        padding-top: 64px;
-        padding-bottom: 64px;
+        flex-direction: column;
+        text-align: center;
+        margin: 0px;
+        padding: 0px;
+
+
     }
-    
+
     .contenido-rodapie-logo-links {
         display: flex;
-        width: 464px;
-        justify-content: space-between;
+        flex-direction: column;
+        width: 360px;
+        justify-content: center;
+        margin-top: 16px;
     }
-    
+
     .contenido-links {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+
     }
-    
+
     .contenido-link {
         font-family: 'Raleway';
         font-style: normal;
@@ -251,39 +257,70 @@
         font-size: 16px;
         line-height: 19px;
         text-decoration: none;
+        margin-bottom: 16px;
     }
-    
+
+
+
     .contenido-contacto {
+        width: 360px;
+
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        align-items: center;
+
     }
-    
+
     .contenido-hable-con-nosotros {
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 700;
         font-size: 16px;
         line-height: 19px;
-        margin: 0px;
+        margin-bottom: 16px;
+
     }
-    
+
     .contenido-nombre {
-        width: 560px;
+        width: 328px;
         height: 56px;
         border: none;
         background: #FFFFFF;
         border-radius: 4px;
+        margin-bottom: 16px;
     }
-    
+
+    .contenido-nombre::placeholder {
+        width: 304px;
+        height: 16px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A2A2A2;
+    }
+
     .contenido-mensaje {
-        width: 560px;
+        width: 328px;
         height: 82px;
         border: none;
         background: #FFFFFF;
         border-radius: 4px;
+        margin-bottom: 16px;
     }
-    
+
+    .contenido-mensaje::placeholder {
+        width: 304px;
+        height: 20px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        color: #A2A2A2;
+    }
+
     .contenido-submit {
         font-family: 'Raleway';
         font-style: normal;
@@ -292,39 +329,40 @@
         line-height: 19px;
         color: #FFFFFF;
         border-color: #2A7AE4;
-        width: 144px;
-        height: 51px;
+        width: 133px;
+        height: 40px;
         background: #2A7AE4;
+        margin-bottom: 16px;
     }
-    
+
     .rodapie {
         text-align: center;
-        width: 468px;
-        height: 102px;
+        width: 360px;
+        margin: 0px;
         background: #FFFFFF;
-        padding-top: 32px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         line-height: 19px;
-        text-align: center;
         color: #464646;
     }
-    
+
+
+
     /*----login----*/
     .todo-login {
-        width: 468px;
+        width: 768px;
         height: 1080px;
         background: #F5F5F5;
     }
-    
+
     .contenedor-iniciar-sesion {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .iniciar-sesion-titulo {
         font-family: 'Raleway';
         font-style: normal;
@@ -335,7 +373,7 @@
         margin-top: 92px;
         margin-bottom: 25px;
     }
-    
+
     .iniciar-sesion-email {
         width: 423px;
         height: 63px;
@@ -350,7 +388,7 @@
         line-height: 20px;
         color: #A2A2A2;
     }
-    
+
     .iniciar-sesion-contrasena {
         width: 423px;
         height: 63px;
@@ -365,7 +403,7 @@
         line-height: 20px;
         color: #A2A2A2;
     }
-    
+
     .iniciar-sesion-boton {
         width: 423px;
         height: 63px;
@@ -379,14 +417,14 @@
         border: #2A7AE4;
         margin-bottom: 91px;
     }
-    
+
     /*---------------------------------Ajustes pagina Agregar producto-----------------------------*/
     .todo-agregar-producto {
-        width: 468px;
+        width: 768px;
         height: 1228px;
         background: #F5F5F5;
     }
-    
+
     .header-menu-administrador {
         width: 183px;
         height: 51px;
@@ -399,13 +437,13 @@
         color: #2A7AE4;
         text-align: center;
     }
-    
+
     .contenedor-agregar-producto {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    
+
     .agregar-producto-titulo {
         font-family: 'Raleway';
         font-style: normal;
@@ -416,7 +454,7 @@
         margin-top: 64px;
         margin-bottom: 16px;
     }
-    
+
     .agregar-producto-url {
         width: 559px;
         height: 56px;
@@ -431,7 +469,7 @@
         color: #464646;
         margin-bottom: 16px;
     }
-    
+
     .agregar-producto-categoria {
         width: 559px;
         height: 56px;
@@ -446,7 +484,7 @@
         border: #FFFFFF;
         margin-bottom: 16px;
     }
-    
+
     .agregar-producto-nombre {
         width: 559px;
         height: 56px;
@@ -461,7 +499,7 @@
         border: #FFFFFF;
         margin-bottom: 16px;
     }
-    
+
     .agregar-producto-precio {
         width: 559px;
         height: 56px;
@@ -476,7 +514,7 @@
         border: #FFFFFF;
         margin-bottom: 16px;
     }
-    
+
     .agregar-producto-descripcion {
         width: 559px;
         height: 82px;
@@ -491,7 +529,7 @@
         border: #FFFFFF;
         margin-bottom: 16px;
     }
-    
+
     .iniciar-sesion-boton {
         width: 559px;
         height: 51px;
@@ -505,14 +543,14 @@
         border: #2A7AE4;
         margin-bottom: 64px;
     }
-    
+
     /*--------------------------- Ajustes pagina todos los productos  ---------------------*/
-    
+
     .todo-todo-los-productos {
-        width: 468px;
+        width: 768px;
         background: #F5F5F5;
     }
-    
+
     .boton-agregar-producto {
         width: 163px;
         height: 51px;
@@ -525,5 +563,5 @@
         color: #FFFFFF;
         border: #2A7AE4;
     }
-    
+
 }

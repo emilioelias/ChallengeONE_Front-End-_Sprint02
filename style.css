@@ -65,6 +65,12 @@
     width: 1440px;
     height: 352px;
     background-image: url("img/banner.png");
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+
     display: flex;
     flex-direction: column;
     justify-content: end;
